@@ -8,4 +8,3 @@ struct ChangeColorAction: Action {
         self.direction = direction
     }
 }
-

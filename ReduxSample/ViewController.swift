@@ -23,11 +23,11 @@ class ViewController: UIViewController {
     }
 
     func prevButtonTouched(_ sender: AnyObject?) {
-        mainStore.dispatch(ChangeColorAction(direction: .prev));
+        mainStore.dispatch(ChangeColorAction(direction: .prev))
     }
 
     func nextButtonTouched(_ sender: AnyObject?) {
-        mainStore.dispatch(ChangeColorAction(direction: .next));
+        mainStore.dispatch(ChangeColorAction(direction: .next))
     }
 
     private func setupUI() {
@@ -43,13 +43,11 @@ class ViewController: UIViewController {
 
         let prevButton = UIButton(type: .system)
         prevButton.setTitle("Previous color", for: .normal)
-        //prevButton.translatesAutoresizingMaskIntoConstraints = false
         prevButton.addTarget(self, action: #selector(prevButtonTouched), for: .touchUpInside)
         buttonContainer.addArrangedSubview(prevButton)
 
         let nextButton = UIButton(type: .system)
         nextButton.setTitle("Next color", for: .normal)
-        //nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.addTarget(self, action: #selector(nextButtonTouched), for: .touchUpInside)
         buttonContainer.addArrangedSubview(nextButton)
 

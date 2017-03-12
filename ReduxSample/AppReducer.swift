@@ -7,5 +7,4 @@ struct AppReducer: Reducer {
             colorState: ColorReducer().handleAction(action: action, state: state?.colorState)
         )
     }
-    
 }

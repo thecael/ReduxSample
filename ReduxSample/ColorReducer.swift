@@ -38,6 +38,6 @@ struct ColorReducer: Reducer {
             return colors.last ?? current
         }
 
-        return direction == .next ? colors[index + 1] : colors[index - 1] 
+        return direction == .next ? colors[index + 1] : colors[index - 1]
     }
 }
